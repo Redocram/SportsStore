@@ -1,10 +1,11 @@
-﻿// compile with: /doc:Documentation.xml 
+﻿// compile with: /doc:SportStoreDoc.xml 
 
+using Moq;
 using Ninject;
+using SportsStore.Domain.Abstract;
+using SportsStore.Domain.Entities;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Web;
 using System.Web.Mvc;
 
 namespace SportsStore.WebUI.Infrastructure
@@ -25,9 +26,23 @@ namespace SportsStore.WebUI.Infrastructure
             AddBindings();
         }
 
+        /// <summary>
+        /// This method bind a Interface to the implementing class the will be used to resolve the DI
+        /// </summary>
         private void AddBindings()
         {
-            throw new NotImplementedException();
+            Mock<IProductRepository> mock = new Mock<IProductRepository>();
+            mock.Setup(m => m.Products).Returns(new List<Product>
+            {
+                new Product { Name = "Football", Price = 25},
+                new Product { Name = "Surf board", Price = 179},
+                new Product { Name = "Running shoes", Price = 95},
+            });
+
+            /*Thanks to ToConstant method, Ninject will return the same mock object whenever it gets a request for an implementation of the IProductRepository interface.
+             * Rather than create a new istance of the implementation object each time, ninject will always satisfy requests for the IProductRepository interface with the same mock object
+             */
+            kernel.Bind<IProductRepository>().ToConstant(mock.Object);
         }
 
         /// <summary>
