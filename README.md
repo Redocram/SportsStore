@@ -8,5 +8,5 @@ This exercise is taken from "Pro ASP.NET MVC 5" by Adam Freeman. Apress
 * Ninject 3.0.1.10 in SportsStore.UnitTests
 * Ninject.Web.Common 3.0.0.7 in SportsStore.UnitTests
 * Ninject.MVC3 3.0.0.6 in SportsStore.UnitTests
-* Moq latest in SportsStore.WebUI
-* Moq latest in SportsStore.UnitTests
+* Moq 4.7.145 in SportsStore.WebUI
+* Moq 4.7.145 in SportsStore.UnitTests
