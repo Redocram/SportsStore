@@ -1,0 +1,13 @@
+* {
+  font-family: "font-family: 'Ubuntu', sans-serif"; }
+
+h1, h2, h3, h4 {
+  font-family: "font-family: 'Ubuntu', sans-serif"; }
+
+body {
+  background-color: #ffebcd; }
+
+.navbar-inverse .navbar-brand {
+  color: #ffebcd; }
+
+/*# sourceMappingURL=CustomStyle.css.map */

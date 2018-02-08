@@ -8,7 +8,7 @@ namespace SportsStore.Domain.Entities
     {
         /// <summary>
         /// The DB ID for the category.</summary>
-        public int ProductID { get; set; }
+        public int CategoryID { get; set; }
         /// <summary>
         /// The Name of the category.</summary>
         public string Name { get; set; }

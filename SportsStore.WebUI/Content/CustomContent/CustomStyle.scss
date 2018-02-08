@@ -1,0 +1,20 @@
+﻿@import "variables.scss";
+
+*{
+  font-family: $font-primary;
+}
+
+h1,h2,h3,h4 {
+  font-family: $font-primary;
+}
+
+body {
+  background-color: $color-primary;
+}
+
+.navbar-inverse {
+  .navbar-brand {
+    color: $color-primary;
+  }
+}
+ 

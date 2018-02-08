@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAEA,CAAC;EACC,WAAW,ECHE,mCAAmC;;ADMlD,cAAY;EACV,WAAW,ECPE,mCAAmC;;ADUlD,IAAK;EACH,gBAAgB,ECTF,OAAO;;ADarB,6BAAc;EACZ,KAAK,ECdO,OAAO",
+"sources": ["CustomStyle.scss","variables.scss"],
+"names": [],
+"file": "CustomStyle.css"
+}
