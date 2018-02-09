@@ -1,5 +1,7 @@
 ﻿// compile with: /doc:SportStoreDoc.xml 
 
+using System.ComponentModel.DataAnnotations.Schema;
+
 namespace SportsStore.Domain.Entities
 {
     /// <summary>
@@ -20,7 +22,7 @@ namespace SportsStore.Domain.Entities
         public decimal Price { get; set; }
         /// <summary>
         /// The category class of the product</summary>
-        public Category Category { get; set; }
+        public int CategoryID { get; set; }
 
     }
 }

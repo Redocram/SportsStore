@@ -3,6 +3,7 @@
 using Moq;
 using Ninject;
 using SportsStore.Domain.Abstract;
+using SportsStore.Domain.Concrete;
 using SportsStore.Domain.Entities;
 using System;
 using System.Collections.Generic;
@@ -42,7 +43,8 @@ namespace SportsStore.WebUI.Infrastructure
             /*Thanks to ToConstant method, Ninject will return the same mock object whenever it gets a request for an implementation of the IProductRepository interface.
              * Rather than create a new istance of the implementation object each time, ninject will always satisfy requests for the IProductRepository interface with the same mock object
              */
-            kernel.Bind<IProductRepository>().ToConstant(mock.Object);
+            kernel.Bind<IProductRepository>().To<EFProductRepository>();
+            kernel.Bind<ICategoryRepository>().To<EFCategoryRepository>();
         }
 
         /// <summary>

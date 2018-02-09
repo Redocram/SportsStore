@@ -12,6 +12,6 @@ namespace SportsStore.Domain.Abstract
     {
         /// <summary>
         /// A sequence of Category objects.</summary>
-        IEnumerable<Category> Products { get; }
+        IEnumerable<Category> Categories { get; }
     }
 }
