@@ -1,11 +1,9 @@
 ﻿// compile with: /doc:SportStoreDoc.xml 
 
-using System.ComponentModel.DataAnnotations.Schema;
-
 namespace SportsStore.Domain.Entities
 {
     /// <summary>
-    /// This class represents the base shop's product</summary>
+    /// This class represents the base shop's product.</summary>
     public class Product
     {
         /// <summary>

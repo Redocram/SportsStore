@@ -18,5 +18,7 @@ namespace SportsStore.Domain.Concrete
         /// <value>The type parameter of the DbSet result specifies the model type that the EF should use to represent row in that table</value>
         public DbSet<Category> Categories { get; set; }
 
+        public DbSet<ProductImage> ProductImages { get; set; }
+
     }
 }

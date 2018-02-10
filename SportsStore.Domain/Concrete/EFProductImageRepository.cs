@@ -1,16 +1,19 @@
 ﻿using SportsStore.Domain.Abstract;
+using System;
 using System.Collections.Generic;
+using System.Text;
 using SportsStore.Domain.Entities;
 
 namespace SportsStore.Domain.Concrete
 {
-    public class EFCategoryRepository : ICategoryRepository
+    public class EFProductImageRepository : IProductImageRepository
     {
         private EFDbContext context = new EFDbContext();
 
-        public IEnumerable<Category> Categories
+        public IEnumerable<ProductImage> ProductImages
         {
-            get { return context.Categories; }
+            get { return context.ProductImages; }
+
         }
     }
 }
