@@ -45,6 +45,7 @@ namespace SportsStore.WebUI.Infrastructure
              */
             kernel.Bind<IProductRepository>().To<EFProductRepository>();
             kernel.Bind<ICategoryRepository>().To<EFCategoryRepository>();
+            kernel.Bind<IProductImageRepository>().To<EFProductImageRepository>();
         }
 
         /// <summary>

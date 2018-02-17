@@ -9,8 +9,9 @@
 
 @foreach (var p in Model.Products)
 {
-  <div>
+  <div>    
     <h3>@p.Name</h3>
+    <img src="@Url.Action("GetImage", "Product", new { p.ProductID })"/>   
     @p.Description
     <h4>@p.Price.ToString("c")</h4> @* ToString("c") reners numerical values as currency according to the culture settings of the server *@    
   </div>

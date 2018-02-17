@@ -7,19 +7,22 @@ using System.Web.Mvc;
 using SportsStore.Domain.Abstract;
 using SportsStore.Domain.Entities;
 using SportsStore.WebUI.Models;
+using System.IO;
 
 namespace SportsStore.WebUI.Controllers
 {
     public class ProductController : Controller
     {
-        private IProductRepository repository { get; set; }
+        private IProductRepository productRepository { get; set; }
+        private IProductImageRepository imageRepository { get; set; }
         /// <summary>
         /// The number pf Products per page</summary>
         public int PageSize = 4;
 
-        public ProductController(IProductRepository productRepository)
+        public ProductController(IProductRepository productRepository, IProductImageRepository imageRepository)
         {
-            this.repository = productRepository;
+            this.productRepository = productRepository;
+            this.imageRepository = imageRepository;
         }
 
         /// <summary>
@@ -30,19 +33,28 @@ namespace SportsStore.WebUI.Controllers
         {
             ProductsListViewModel model = new ProductsListViewModel
             {
-                Products = repository.Products
+                Products = productRepository.Products
                 .OrderBy(p => p.ProductID)
+                .Skip((page - 1) * PageSize)
+                .Take(PageSize),
+                ProductImages = imageRepository.ProductImages // for now it's useless to pass this to the view
+                .OrderBy(i => i.ProductID)
                 .Skip((page - 1) * PageSize)
                 .Take(PageSize),
                 PagingInfo = new PagingInfo
                 {
                     CurrentPage = page,
                     ItemsPerPage = PageSize,
-                    TotalItems = repository.Products.Count()
+                    TotalItems = productRepository.Products.Count()
                 }
             };
-            return View(model);
+            return View(model);           
         }
-        
+
+        public FileContentResult GetImage(int productId)
+        {
+            return File(imageRepository.ProductImages.Where(i => i.ProductID == productId).FirstOrDefault().ImageData, imageRepository.ProductImages.Where(i => i.ProductID == productId).FirstOrDefault().ImageMimeType);
+        }
+
     }
 }
