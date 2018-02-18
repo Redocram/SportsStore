@@ -17,7 +17,7 @@ namespace SportsStore.WebUI.Controllers
         private IProductImageRepository imageRepository { get; set; }
         /// <summary>
         /// The number pf Products per page</summary>
-        public int PageSize = 4;
+        public int PageSize = 6;
 
         public ProductController(IProductRepository productRepository, IProductImageRepository imageRepository)
         {

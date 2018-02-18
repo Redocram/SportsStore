@@ -1,0 +1,14 @@
+{
+  "name": "SportStore.WebUI",
+  "version": "1.0.0",
+  "description": "This exercise is taken from \"Pro ASP.NET MVC 5\" by Adam Freeman. Apress",
+  "main": "index.js",
+  "repository": "https://github.com/Redocram/SportsStore.git",
+  "author": "Redocram",
+  "license": "MIT",
+  "dependencies": {
+    "grunt": "^1.0.2",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-watch": "^1.0.0"
+  }
+}
