@@ -29,12 +29,6 @@ body {
     a {
         display: block;
         text-align: center; 
-    }
-
-    
-
-    &:hover {
-        @extend .zoom-background-hover;
-    }
+    }   
 }
  
