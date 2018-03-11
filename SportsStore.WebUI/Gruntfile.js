@@ -25,7 +25,7 @@
             bsFiles: {
                 src: [
                     './Content/CustomContent/CustomStyle.css',
-                    '/Views/**/*.cshtml'
+                    './Views/**/*.cshtml'
                 ]
             },
             options: {
