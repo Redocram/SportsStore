@@ -1,0 +1,16 @@
+﻿@import "../0-variables/variables";
+
+/*------------------------------------*\
+  #LAYOUT
+\*------------------------------------*/
+
+.ss-l-wrapper {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(12, [col-start] 1fr);
+
+  * {
+      grid-column: col-start / span 12;
+      background-color: black;
+  }
+}

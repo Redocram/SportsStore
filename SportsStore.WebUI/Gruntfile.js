@@ -4,7 +4,7 @@
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),   
     watch: {
-        files: ['Content/CustomContent/CustomStyle.scss'],
+        files: ['Content/Css/Sass/**/**.scss'],
         tasks: ['sass'],
         options: {
           spawn: false
@@ -16,7 +16,7 @@
                 style: 'expanded'
             },
             files: {                         // Dictionary of files 
-                './Content/CustomContent/CustomStyle.css': './Content/CustomContent/**/**.scss'       // 'destination': 'source' 
+                './Content/Css/main.css': './Content/Css/Sass/**/*.scss'       // 'destination': 'source' 
             }
         }
     },
@@ -24,7 +24,7 @@
         dev: {
             bsFiles: {
                 src: [
-                    './Content/CustomContent/CustomStyle.css',
+                    './Content/Css/CustomStyle.css',
                     './Views/**/*.cshtml'
                 ]
             },
