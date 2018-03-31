@@ -16,7 +16,7 @@
                 style: 'expanded'
             },
             files: {                         // Dictionary of files 
-                './Content/CustomContent/CustomStyle.css': './Content/CustomContent/CustomStyle.scss'       // 'destination': 'source' 
+                './Content/CustomContent/CustomStyle.css': './Content/CustomContent/**/**.scss'       // 'destination': 'source' 
             }
         }
     },
