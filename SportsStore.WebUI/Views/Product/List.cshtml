@@ -11,11 +11,11 @@
 
   @foreach (var p in Model.Products)
   {
-      <div class="col-sm-6 col-md-4">
-        <div class="thumbnail">
-            <a href=# class="text-center">
-                <img class="text-center" src="@Url.Action("GetImage", "Product", new { p.ProductID })" alt="@p.Name" height="280" />
-                <div class="caption text-left">
+      <div class="">
+        <div class="">
+            <a href=# class="">
+                <img class="" src="@Url.Action("GetImage", "Product", new { p.ProductID })" alt="@p.Name" height="280" />
+                <div class="">
                     <h3>@p.Name</h3>
                     <p>@p.Description</p>
                     <h4>@p.Price.ToString("c")</h4> @* ToString("c") reners numerical values as currency according to the culture settings of the server *@
