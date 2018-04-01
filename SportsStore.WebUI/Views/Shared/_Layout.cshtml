@@ -10,37 +10,17 @@
     <script src="~/Scripts/modernizr-2.6.2.js"></script>
 </head>
 <body>
-    <div class="" role="navigation">
-        <div class="">
+    <div class="ss-l-wrapper">
+        <header class="ss-c-header">
+            <p>Header</p>
+        </header>
+            @RenderBody()            
+        <footer class="">
             <div class="">
-                <button type="button" class="" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class=""></span>
-                    <span class=""></span>
-                    <span class=""></span>
-                </button>
-                @Html.ActionLink("SportsStore", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+                <p>Footer</p>
             </div>
-            <div class="">
-                <ul class=""></ul>
-            </div>
-        </div>
-    </div>
-
-    <div class="">
-        <div id="categories" class="">
-            Put something useful here
-        </div>
-        <div class="">
-            @RenderBody()
-        </div>
-    </div>
-    <footer class="">
-        <div class="">
-            <p>Footer</p>
-        </div>
-    </footer>
-
-    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
-    <script src="~/Scripts/bootstrap.min.js"></script>
+        </footer>
+        <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    </div>    
 </body>
 </html>

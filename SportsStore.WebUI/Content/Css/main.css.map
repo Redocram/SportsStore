@@ -1,7 +1,7 @@
 {
 "version": 3,
-"mappings": "AAEA;;wCAEwC;AAQxC;;wCAEwC",
-"sources": ["Sass/0-variables/variables.scss"],
+"mappings": "AAEA;;wCAEwC;AAMxC;;wCAEwC;AAVxC;;wCAEwC;AAMxC;;wCAEwC;ACVxC;;wCAEwC;ACJxC,sBAAuB;EACrB,SAAS,EAAE,WAAW;EACtB,mBAAmB,EAAE,IAAI;;;AFA3B;;wCAEwC;AAMxC;;wCAEwC;AGVxC;;wCAEwC;AAExC,aAAc;EACZ,OAAO,EAAE,IAAI;EACb,gBAAgB,EHDA,IAAI;;;AALtB;;wCAEwC;AAMxC;;wCAEwC;ACVxC;;wCAEwC;AGFxC;;wCAEwC;AAExC,YAAa;EACT;;0CAEwC;EACxC,gBAAgB,EJJJ,OAAO;;AIMnB,4BAAgB;EACZ,OAAO,EAAE,IAAI;EACb,eAAe,EAAE,aAAa;EAC9B;;0CAEwC;;AHsB5C,gDAAwE;EG3BxE,4BAAgB;IAOR,cAAc,EAAE,MAAM;;;;AJjBlC;;wCAEwC;AAMxC;;wCAEwC;ACVxC;;wCAEwC;AIFxC;;wCAEwC;AAExC,aAAc;EAGV;;0CAEwC;EAOxC;;0CAEwC;;AJDxC,gDAAwE;EIb5E,aAAc;IAON,WAAW,EAAE,kBAAkB;IAC/B,QAAQ,EAAE,CAAC;;;AJyBf,gDAAwE;EIjC5E,aAAc;IAgBN,WAAW,EAAE,qBAAqB;IAClC,QAAQ,EAAE,CAAC",
+"sources": ["Sass/0-variables/variables.scss","Sass/1-mixins/mixins-media-queries.scss","Sass/1-mixins/mixins-styling.scss","Sass/2-layout/layout.scss","Sass/5-components/header.scss","Sass/5-components/sidebar.scss"],
 "names": [],
 "file": "main.css"
 }

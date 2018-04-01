@@ -143,6 +143,7 @@
     <Content Include="Content\Css\Sass\1-mixins\mixins-media-queries.scss" />
     <Content Include="Content\Css\Sass\5-components\header.scss" />
     <Content Include="Content\Css\Sass\5-components\sidebar.scss" />
+    <Content Include="Content\Css\Sass\main.scss" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
