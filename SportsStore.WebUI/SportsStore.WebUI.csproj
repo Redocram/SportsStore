@@ -141,6 +141,8 @@
     <Content Include="connectionStrings.config" />
     <Content Include="Content\Css\Sass\1-mixins\mixins-styling.scss" />
     <Content Include="Content\Css\Sass\1-mixins\mixins-media-queries.scss" />
+    <Content Include="Content\Css\Sass\5-components\header.scss" />
+    <Content Include="Content\Css\Sass\5-components\sidebar.scss" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -176,6 +178,8 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Content\Css\Sass\3-base\" />
+    <Folder Include="Content\Css\Sass\4-objects\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\SportsStore.Domain\SportsStore.Domain.csproj">

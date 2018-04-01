@@ -1,0 +1,21 @@
+﻿@import '../1-mixins/mixins-media-queries.scss';
+
+/*------------------------------------*\
+  #HEADER
+\*------------------------------------*/
+
+.ss-c-header {
+    /*------------------------------------*\
+      #COMMON
+    \*------------------------------------*/
+    .ss-o-nav__wrap {
+        display: flex;
+        justify-content: space-between;
+        /*------------------------------------*\
+           #DESKTOP
+        \*------------------------------------*/
+        @include screen-medium() {
+            flex-direction: column;
+        }
+    }
+}
