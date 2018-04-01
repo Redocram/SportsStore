@@ -16,7 +16,7 @@
                 style: 'expanded'
             },
             files: {                         // Dictionary of files 
-                './Content/Css/main.css': './Content/Css/Sass/**/**.scss'       // 'destination': 'source' 
+                './Content/Css/main.css': './Content/Css/Sass/main.scss'       // 'destination': 'source' 
             }
         }
     },
